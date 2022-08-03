@@ -48,12 +48,18 @@
 }
 
 .main {
-    margin-left: 40px;
-    margin-top: 75px;
+    background-color: black;
+    color: white;
 }
 
+.content {
+    margin-top: 46px;
+    margin-left: 78px;
+    line-height: 1.65;
+}
 .form-container {
-    margin-top: 50px ;
+    margin-top: 46px;
+    margin-left: 78px;
     display: grid;
     gap: 2rem 1rem;
     grid-template-columns: repeat(2, 1fr);
@@ -63,8 +69,13 @@
 }
  input {
     width: 300px;
+    border:2px solid #E5E7EB;
  }
- 
+
+ /* input:invalid {
+    border: 2px solid red;
+ }
+  */
 label {
     display: inline-block;
     width: 250px;
@@ -85,4 +96,9 @@ button {
     border-radius: 8px;
     background-color: #596D48;
  
+}
+
+.member {
+    margin-top:5px;
+    margin-left: 78px;
 }
