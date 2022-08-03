@@ -105,18 +105,18 @@ label {
   }​
 
 .error-wrapper {
-position: relative;
+/* position: relative; */
 margin-top: -1.5rem;
 
 }
 .pass-error-msg {
 display: none; 
-position: absolute;
+/* position: absolute; */
 color:rgb(255, 255, 255);
 font-size: 0.8rem;
-right: 32rem;
-bottom: 8.5rem;
-
+/* right: 32rem;
+bottom: 8.5rem; */
+margin-top: -28px;
 }
 
 
