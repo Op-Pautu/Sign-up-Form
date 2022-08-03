@@ -1,0 +1,69 @@
+ @font-face {
+    font-family: norse-bold;
+    src: url('./Norse-Bold.otf') ;
+    font-weight: normal;
+    font-style: normal;
+
+ }
+ .container {
+    display: flex;
+    justify-content: space-around;
+ }
+.bg {
+    background-image: url('https://images.unsplash.com/photo-1571266028243-d220c6a7edbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 46vw;
+    min-width: 345px;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.logo {
+    height: 25%;
+    width: 100vw;
+    background-color: rgba(20, 18, 18, 0.75);
+    color: whitesmoke;
+    text-align: center;
+    font-size: 80px;
+    font-family: norse-bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    
+}
+.credit {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    color:beige;
+}
+
+.main {
+    margin-left: 40px;
+    margin-top: 75px;
+}
+
+.form-container {
+    margin-top: 50px ;
+    display: grid;
+    gap: 2rem 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+
+
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+  }​
