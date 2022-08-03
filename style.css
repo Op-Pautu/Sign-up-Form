@@ -1,3 +1,12 @@
+ 
+:root {
+    --purple: #8a6393;
+    --light-purple: #d1c5dd;
+    --light-green: #a4edc5;
+    --green: #167862;
+    --dark-blue: #232c3c;
+  }
+ 
  @font-face {
     font-family: norse-bold;
     src: url('./Norse-Bold.otf') ;
@@ -21,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    
 } 
 
 .main {
@@ -33,6 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .logo {
     height: 20vh;
@@ -66,6 +76,7 @@
     margin-left: 78px;
     line-height: 1.65;
     height: 100%;
+    
 }
 .form-container {
     margin-top: 46px;
@@ -93,22 +104,39 @@ label {
     
   }​
 
-.button {
-    width: 100px;
-    color: white;
-    
+.error-wrapper {
+position: relative;
+margin-top: -1.5rem;
+
 }
-button {
-    width: 150px;
-    height: 36px;
-    color: white;
-    font-weight: bold;
-    border-radius: 8px;
-    background-color: #596D48;
- 
+.pass-error-msg {
+display: none; 
+position: absolute;
+color:rgb(255, 255, 255);
+font-size: 0.8rem;
+right: 32rem;
+bottom: 8.5rem;
+
 }
 
+
+button.submit {
+    font-family: DMSerif, serif;
+    background-color: var(--green);
+    cursor: pointer;
+
+    margin-left: 78px;
+  }
+
+button:hover {
+    background-color: #23816d;
+  }
+  
+  button:focus {
+    box-shadow: 0 0 0 2px #0f1015,
+                0 0 0 3px var(--light-green);
+  }
 .member {
-    margin-top:5px;
+    
     margin-left: 78px;
 }

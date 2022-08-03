@@ -23,7 +23,7 @@
             <form action="" method="get">
                 <div class="content">
                     <h2>Ye of great fortune, you have arrived</h2>
-                    <p>Herein lies all that you could possibly want. Fame, Power, Freedom&mdash;you name it!</p>
+                    <p>Herein lies all that you could possibly want. <br>Fame, Power, Freedom&mdash;you name it!</p>
                     <p>You need only provide the details below. And get it you shall.</p>
                 </div>
                 <div class="form-container"> 
@@ -53,14 +53,21 @@
                         <input type="password" name="password-confirm" id="password-confirm"required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
                         title="Include Uppercase, Lowercase and Number">
                     </div>
-                    <div class="button">
-                        <button type="submit">Create Account</button>
+                    <div class='error-wrapper'>
+                        <div class='pass-error-msg'>* Passwords do not match</div>
                     </div>
                     
+                    <!-- <div class="button"></div> -->
+                   
+                    
+                    
                 </div>  
+                <button class='submit' type="submit">Create Account</button>
                 <div class="member">
                     <p>Already a member? Click <a href="#">here</a> to login.</p>
                 </div>
+               
+                    
             </form>
 
         </section>
