@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Form</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="bg"> 
+    <main class="container">
+        <section class="bg"> 
             <div class="logo">
                 <img src="odin-lined.png">Odin
             </div>
 
             <p class="credit">Photo by Kofi Nuamah Barden on Unsplash</p>
     
-        </div>
-        <div class="main">
+        </section>
+        <section class="main">
             
             <form action="" method="get">
                 <div class="content">
@@ -28,26 +29,29 @@
                 <div class="form-container"> 
                     <div>
                         <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="fname" id="first-name" required>
+                        <input type="text" name="fname" id="first-name" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" title="Use alphabets (a-z)">
                     </div>
                     <div><label for="last-name">LAST NAME</label>
-                        <input type="text" name="lname" id="last-name" required>
+                        <input type="text" name="lname" id="last-name" required pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" title="Use alphabets (a-z)"> 
                     </div>
                     <div><label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email" required>
+                        <input type="email" name="email" id="email" required placeholder="johndoe@gmail.com">
                     </div>
                     <div>
                         <label for="number">PHONE NUMBER</label>
-                        <input type="tel" name="number" id="number" required>
+                        <input type="tel" name="number" id="number" required pattern="\d{3}[\-]\d{3}[\-]\d{4}^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\" 
+                        placeholder="9423123456">
                     </div>
 
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password" required>    
+                        <input type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        title="Include Uppercase, Lowercase and Number">    
                     </div>
                     <div>
                         <label for="password-confirm">CONFIRM PASSWORD</label>
-                        <input type="password" name="password-confirm" id="password-confirm"required>
+                        <input type="password" name="password-confirm" id="password-confirm"required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+                        title="Include Uppercase, Lowercase and Number">
                     </div>
                     <div class="button">
                         <button type="submit">Create Account</button>
@@ -59,8 +63,8 @@
                 </div>
             </form>
 
-        </div>
-    </div>
+        </section>
+    </main>
    
 </body>
 </html>

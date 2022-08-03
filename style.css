@@ -13,7 +13,7 @@
     background-image: url('https://images.unsplash.com/photo-1571266028243-d220c6a7edbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
     height: 100vh;
     background-repeat: no-repeat;
-    width: 80vw;
+    max-width: 80vw;
     min-width: 345px;
     height: 100vh;
     position: relative;
@@ -24,7 +24,7 @@
 } 
 
 .logo {
-    height: 25%;
+    height: 22%;
     width: 100vw;
     background-color: rgba(20, 18, 18, 0.75);
     color: whitesmoke;
@@ -37,13 +37,13 @@
 }
 
 .logo img {
-    height: 100px;
+    height: 80px;
     
 }
 .credit {
     position: absolute;
     bottom: 0px;
-    right: 5px;
+    left: 5px;
     color:beige;
 }
 
@@ -68,7 +68,7 @@
 
 }
  input {
-    width: 300px;
+    width: 275px;
     border:2px solid #E5E7EB;
  }
 
@@ -78,7 +78,7 @@
   */
 label {
     display: inline-block;
-    width: 250px;
+    width: 240px;
     text-align: left;
     
   }​
