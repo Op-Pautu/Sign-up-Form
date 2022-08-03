@@ -13,7 +13,7 @@
     background-image: url('https://images.unsplash.com/photo-1571266028243-d220c6a7edbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
     height: 100vh;
     background-repeat: no-repeat;
-    width: 46vw;
+    width: 80vw;
     min-width: 345px;
     height: 100vh;
     position: relative;
@@ -61,9 +61,28 @@
 
 
 }
-
+ input {
+    width: 300px;
+ }
+ 
 label {
     display: inline-block;
-    width: 150px;
+    width: 250px;
     text-align: left;
+    
   }​
+
+.button {
+    width: 100px;
+    color: white;
+    
+}
+button {
+    width: 150px;
+    height: 36px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #596D48;
+ 
+}
